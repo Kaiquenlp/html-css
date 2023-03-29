@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone/favicon.ico" type="image/x-icon">
+    <title>Meu portifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="pag001">
+    <header>
+        <h1 class="header">Falando Sobre HTML</h1>
+        <nav>
+        <button><a class="pag001" href="pag002.html" rel="next">Esta é a segunda pagina</a></button>
+        <button><a class="pag001" href="../ex003/index.html" rel="next">acesse a 3 página.</a></button>
+        <button><a class="pag001" href="pag004.html">pagina4</a></button>
+        <button><a class="pag001" href="pag005.html">pagina5</a></button>
+    </nav>
+    </header>
+    <main class="pag001">
+    <h2 class="pag001">Aprendendo HTML</h2>
+            <p>
+            Primeiro parágrafo em HTML, <code>abaixo veremos exemplos</code> de como funcionam as <strong>tags</strong> de títulos, elas repesentam a <em>hierarquia dos titulos</em> no texto e não os tamanhos das fontes, o título H1 seria o mais importante daquele artigo que estamos escrevendo sobre e a partir de H2 até H6, são sub-títulos que virão após o H1,  significa que podemos ter mais 5 paragrafos como este porém com outros 5 sub-títulos e cada um com seu grau de "importancia" sendo o H1 o mais "Forte" e o H6 o mais "fraco". <!--Aqui estou eu novamente voltando a rever algo que eu já deveria ser doutor, mas antes tarde do que nunca, em breve estarei trabalhando com isso.--> 
+            </p>
+        <section id="titulos">
+    <h1>
+        Este é um exemplo de título &lt;H1&gt;
+    </h1>
+        <h2>
+        Este é um exemplo de título &lt;H2&gt;
+        </h2>
+            <h3>
+        Este é um exemplo de título &lt;H3&gt;
+            </h3>
+                <h4>
+                    Este é um exemplo de título &lt;H4&gt;  
+                </h4>
+                    <h5>
+                        Este é um exemplo de título &lt;5&gt;
+                    </h5>
+                        <h6>
+                            Este é um exemplo de título &lt;h6&gt;
+                        </h6>
+        </section>
+    <section id="paragrafos">
+    <h1 class="pag001">
+        Parágrafos e Quebras
+    </h1>
+        <p>
+            Você pode escrever um parágrafo de qualquer jeito basta colocar tudo no meio do par de tags &lt;P&gt; e &lt;/P&gt;
+        </p>
+        <p>
+        Se você quiser fazer uma quebra de texto dentro do mesmo paragráfo para não ter que ficar criando diversas tags
+        no caminho você precisa usar a tag &lt;br&gt;
+        </p>
+    </section>
+
+    <section id="formatacao">
+    <h1 class="pag001">
+        Formatação de texto
+    </h1>
+        <p>
+            Para iniciar a formatação de texto, existem tags como &lt;b&gt; e &lt;i&gt; para essa tarefa mas elas não possuem significado e focam apenas na forma, sendo assim, são pouco semânticos.
+            Sendo assim, recomendamos que você passe a usar as tags &lt;strong&gt; e &lt;em&gt; para realizar essas mesmas formatações visuais, só que agora com sentido. A tag &lt;strong&gt; significa que o termo delimitado possui força dentro da frase. Logo, ele aparecerá em negrito. Já a tag &lt;em&gt; significa que queremos dar ênfase (do Inglês emphasis) ao termo. Logo, ele aparecerá em itálico.
+            Note que, ao usar &lt;strong&gt; e &lt;em&gt; no lugar de &lt;b&gt; e &lt;i&gt; , damos mais significado aos nossos termos e conteúdos. Como eles vão ser representados visualmente (forma), vai depender das nossas folhas de estilo CSS. 
+            <br> Para fazer <mark>marcações</mark> em HTML usamos a tag &LT;mark&GT;
+        </p>
+        <h2 class="pag001">
+            Textos sobrescrito e subscrito
+        </h2>
+        <p class="pag001"> class="pag001"
+            Quantas vezes você tentou escrever um x2 ou um H2O em
+            um documento e ficou na dúvida de como fazer pra esses
+            números ficarem pequeninos ali em cima ou embaixo. Pois
+            a HTML tem as tags &lt;sub&gt; e &lt;sup&gt; justamente para essa
+            finalidade. Ao analisar os exemplos de código que apontei
+            no início desse documento, você vai perceber melhor a
+            diferença entre eles,<br>Por exemplo, x<sup>2</sup> e H<sub>2</sub>O
+        </p>
+        <h2 class="pag001">Trechos de Código</h2>
+        <p class="pag001">
+            Nós somos (ou seremos) programadores, e por isso compartilhamos muito códigofonte em diversas linguagens. Para isso, existe a tag &lt;code&gt; da HTML onde você pode
+            delimitar seu código. A principal vantagem no uso dessa tag é a o valor semântico que
+            ela representa, indicando ao navegador que se trata de um código de computador.
+            Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas
+            (monospace), o que facilita bastante a leitura do código, apenas com essa tag o código não aparecerá "lindamente" no navegador, para isso utilizamos uma outra tag com o nome de pre juntamente com a tag code, veja a seguir:
+            <pre><code>
+                num = int (input('digite um número'))
+                if num / 2 == 0: 
+                    print (f'0 número {num} é par')
+                else:
+                    print (f'0 número {num} é ímpar)
+                print: ('FIM DO PROGRAMA')
+            </code></pre>
+        </p>
+        <h2 class="pag001">Abreviações</h2>
+            <p class="pag001">
+                Essa é uma novidade da HTML5 e que ajuda muito em áreas como a de Tecnologia,
+                que usa muitas siglas e abreviações. Sempre que você quiser escrever uma sigla, mas
+                deixar claro ao usuário (e aos mecanismos de busca) o significado dela, use a tag
+                &lt;abbr&gt;.
+                <br> Por exemplo: Estou estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Não sei esse">CSS</abbr> e estou gostando.
+            </p>
+        </section>
+        <section id="listas">
+    <h1 class="pag001">
+        Listas ordenadas, não ordenada e de definições
+    </h1>
+        <h class="pag001"2>Listas Ordenadas:</h2>
+            <p class="pag001">
+                A HTML <span>chama de ordered lists</span> todas aquelas listas onde a ordem dos itens é algo
+                muito importante. Um passo-a-passo para criar um bolo, uma lista de aprovados no
+                vestibular e uma lista com os carros mais caros do mundo são exemplos de listas
+                ordenadas.
+                Para criar uma ordered list, vamos usar a tag &lt;ol&gt; para delimitar a lista e &lt;li&gt; (list
+                item) para identificar cada item da lista <br>
+                 Exemplo de Lista OL :
+                <h3 class="pag001">Carros mais caros do mundo:</h3>
+                    <ol>
+                        <li>Ferrari</li>
+                        <li>Lamborguini</li>
+                        <li>Pagani</li>
+                        <li>Bugatti</li>
+                    </ol>
+            </p>
+            <h2 class="pag001">Listas Não Ordenadas:</h2>
+            <p class="pag001">
+                Se você compreendeu a criação de listas ordenadas, com certeza vai entender as
+                unordered lists, também chamadas de listas com marcadores, que são aquelas onde
+                a ordem dos itens não influenciará no significado da lista. Ela é apenas uma ótima
+                maneira para organizar os itens que não apresentam uma classificação
+                necessariamente.
+                Para criar uma unordered list, vamos usar a tag &lt;ul&gt; para delimitar a lista e a tag
+                &lt;li&gt; para criar cada um dos seus itens internos. <br>
+                Exemplo de Lista Não Ordenada: 
+                <h3>Feira do Mês</h3>
+                    <ul>
+                        <li>Feijão</li>
+                        <li>Arroz</li>
+                        <li>Carne</li>
+                        <li>Açucar</li>
+                    </ul>
+            </p>
+            <h2 class="pag001">Misturando as coisas:</h2>
+            <p class="pag001">
+                Podemos misturar os dois tipos de listas sem problemas: <br>
+                <h3 class="pag001">Lista dos meus jogos favoritos:</h3>
+                <ol>
+                    <li>Nitendo</li>
+                <ol type="a">
+                    <li>Mario bros
+                        <ul type="disc">
+                            <li>Esse era o melhor</li>
+                        </ul>
+                    </li>
+                    <li>Ligeirinho
+                        <ul type="disc">
+                            <li>Esse era muito bom</li>
+                        </ul>
+                    </li>
+                    <li>Super bla bla bla</li>
+                    <li>Super não sei o que</li>
+                </ol>
+                <li>Xbox 360</li>   
+                <ol type="a">
+                    <li>Fifa</li>
+                    <li>Call of duty</li>
+                    <li>GTA</li>
+                </ol>
+                
+                </ol>
+            </p>
+        </section>
+        <section id="imagens">
+    <h1 class="pag001">Imagens</h1>
+        <p class="pag001">
+            <mark style="background-color: aqua;">Para adicionar imagens</mark> usamos a tag &lt;img&gt; <br>(Abaixo dois exemplos de imagem) <!-- Aqui usei uma mark, com css para alterar a cor da mesma-->
+        </p>
+            <img src="imagens/css-200.png" alt="imagem css">
+            <img src="imagens/html-200.png" alt="imegem html">
+        <p class="pag001">
+            Todo site precisa ter imagens que se adaptam as telas dos usuários, para isso podemos utilizar algumas tecnicas de adaptação, é importante que cada imagem tenha pelo menos 3 versões com tamanhos diferentes para o proprio HTML fazer este trabalho. devemos utilizar a tag picture, com tres outros recursos, media, srcset e type, devemos sempre seguir a ordem de baixo para cima, da maior para a menor, sendo a menor a "primeira". 
+        </p>
+        <picture>
+            <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+            <!--<img src="imagens/foto-g.png" alt="imagem flexivel">-->
+        </picture>
+    <h1 class="pag001">
+    </section>
+    <section id="links">
+         Trabalhando com links externos
+    </h1>
+        <p class="pag001">
+            Para criação de lins usamos a tag &lt;a&gt; com o atributo href que cria uma referencia hypertext, por exemplo:
+            <br> <a href="https://www.youtube.com/watch?v=Vbabsye7mWo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=9">Acesse este link</a> <br>
+            No caso do link acima você será direcionado para o site que está neste link e o seu site irá ser fechado e <br>
+            provavelmente o usuário não voltará mais a acessar seu site e isso não é bom, você deve manter o usuário ativo no seu site para que ele continue consumindo seu produto. <br>
+            O ideal é usar dentro da tag "a" você adicione target com um "alvo" _blank e com "rel external", assim você abre uma nova guia e mantêm o seu site aberto e o usuário tem que voltar ao seu site outras vezes <br>
+            Por exemplo: 
+            <a href="https://www.youtube.com/watch?v=Vbabsye7mWo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=9" target="_blank" rel="external">Acesse este link</a> <br>
+        </p>
+        <h2 class="pag001">
+            Links internos
+        </h2>
+            <p class="pag001">
+                Para links internos, vamos utilizar a tag a como os anteriores, porém vamos mudar apenas o caminho, não é necessario que você coloque todo o caminho <br>
+                Por exemplo: <br>
+                <a href="pag002.html" rel="next">Esta é a segunda pagina</a> <br>
+                <a href="../ex003/index.html" rel="next">acesse a 3 página.</a>
+            </p>
+        </section>
+        <section id="fontes">
+        <h2 class="pag001">
+            Falando sobre fontes:
+        </h2>
+            <p class="pag001">
+                Medidas absolutas (cm, mm, in, pt, px, pc) e relativas (em, ex, rem, vh, vw, %) <br>
+                shorthand: Para criar uma shorthand(condensar todas as propriedade em uma só) devemos seguir a segunte ordem na tag "fonte":
+                <ol>
+                    <li>font style</li>
+                    <li>font weight</li>
+                    <li>font size</li>
+                    <li>font family</li>
+                </ol>
+                 <br><br>
+                Tipos de format ()
+                <ul>
+                    <li>opentype (otf)</li>
+                    <li>truetype (ttf)</li>
+                    <li>embedded-opentype</li>
+                    <li>truetype-aat (Apple - Advanced - Typo'graphy)</li>
+                    <li>SVG</li>
+                </ul>
+            </p>
+        </section>
+        <section id="css">
+            <h2 class="pag001">Tipos de alinhamento:</h2>
+            <p class="pag001"> Basicamente, temos tres tipos de alinhamento, à direita, no centro e à direita. <br>
+                <p class="pag001">Para fazer o alinhamento, utilizamos o CSS, </p>
+            </p>
+        </section>
+    <section id="javascript">
+    <h1 class="pag001">
+            Iniciando os Estudos com DOM / Javascript
+    </h1>
+
+        <div id="area">
+            interaja...
+        </div>
+        <h1 class="pag001">
+            Somando Valores
+        </h1>
+            <div>
+                <p>
+                    <input type="number" name="txtn1" id="txtn1">
+                    <input type="number" name="txtn2" id="txtn2">
+                    <input type="button" value="Somar" onclick='somar()'>
+                    <div id="res">Resultado</div>
+                </p>
+            </div>
+        <h1 class="pag001">
+            Usando Javascript para um sistema de multas.
+        </h1>
+            <div id = 'multas'>
+                Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+                <input type="button" value="Verificar" onclick="calcular()">
+                <div id="res"></div>
+            </div>
+        <h1 class="pag001">ID, Class, Pseudo-Class e Pseudo-element.</h1>
+        <p class="pag001">Os ID'S são utilizados para identidicar itens no html, são muito utilizados para dar uma organização nas CSS e também no Javascript, visto que são usados para identificar areas que serão trabalhadas, as classes assim como os ID's são para a mesma finalidade, porém são mais abrangentes, pois não se pode ter mais de um item com o mesmo ID, logo criamos uma classe para que os itens aninhados dentro daquela mesma classe recebam os mesmos tratamentos, as Pseudo-Clases são utilizadas com : e elas indicam estados de um determinado item, por exemplo, quando utilizamos a psudo-class hover, quando o mouse passa em cima daquele elemento ele muda o estado, podendo mudar cor, tamanho da letra e outras configurações e por fim os Pseudo-elementos, são utilizados para modificar o conteudo periferico dos elementos, por exmplo, se eu quiser que após um link apareça a palavea link sem que eu tenha que colocar no HTML (e assim perder o sentido semantico) eu adiciono um Pseudo-element com :: e coloco por exemplo, ::AFTER ou ::BEFORE, assim aparecerá um novo elemento que tera essa função.</p>
+         <h2 class="pag001">Exemplos de aplicação:</h2>
+         <h3 class="pag001">Personalizando links</h3>
+         <ul>
+            <li><a href="https://github.com/Kaiquenlp" target="_blank">Meu Github</a></li>
+            <li><a href="https://www.instagram.com/kaiquenunesl/" target="_blank">Meu instagram</a></li>
+            <li><a href="https://music.youtube.com/watch?v=b-UsFrol25Y&list=RDTMAK5uy_kset8DisdE7LSD4TNjEVvrKRTmG7a56sY" target="_blank">Uma musica que gosto</a></li>
+         </ul>
+         <div class="d1">01</div>
+         <div class="d1">02</div>
+         <div class="d1">03</div>
+         <footer>
+            <p>
+                Site criado em parceria com <a href="https://github.com/gustavoguanabara" target="_blank">Gustavo Guanabara</a> para o CursoemVideo.
+            </p>
+        </footer>
+    </main>
+
+        <script src="script.js"></script>
+</body>
+</html> 
