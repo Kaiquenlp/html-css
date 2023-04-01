@@ -1,9 +1,48 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: padrao;
+    src: url('../Edu_NSW_ACT_Foundation/EduNSWACTFoundation-VariableFont_wght.ttf');
+}
+
+:root{
+    --fonte-padrao: 'padrao'
+}
+
 body{
     background-image: url('../fundo-preto-com-malha-de-baixo-poli-vermelho-brilhante/fundo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+header{
+    color: white;
+    font: var(--fonte-padrao);
+    font-size: 18px;
+
+
+}
+
+nav {
+    text-align: center;
+}
+nav a {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    text-decoration: none;
+}
+
+header > nav > button {
+    color: black;
+    box-shadow: 1px 1px 1px rgba(192, 191, 191, 0);
+    border-radius: 7px 0px;
+    font: var(--fonte-padrao);
+    padding: 4px;
+    text-decoration: none;
+    transition-duration: .5s;
+    text-align: center;
 }
