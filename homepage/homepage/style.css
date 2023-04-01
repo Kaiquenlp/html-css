@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+    background-image: url('../fundo-preto-com-malha-de-baixo-poli-vermelho-brilhante/fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
