@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-size: ;
 }
 
 header{
@@ -82,3 +83,4 @@ button#b1{
     background-size: cover;
 
 }
+
